@@ -1,0 +1,1170 @@
+"C:\Program Files\JetBrains\IntelliJ IDEA 211.4961.33\jbr\bin\java.exe" -XX:TieredStopAtLevel=1 -noverify -Dspring.output.ansi.enabled=always "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 211.4961.33\lib\idea_rt.jar=51597:C:\Program Files\JetBrains\IntelliJ IDEA 211.4961.33\bin" -Dcom.sun.management.jmxremote -Dspring.jmx.enabled=true -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -Dfile.encoding=UTF-8 -classpath C:\kafka-test\kafkastream-window\target\classes;C:\Users\sd003526\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.4.2\spring-boot-starter-web-2.4.2.jar;C:\Users\sd003526\.m2\repository\org\springframework\boot\spring-boot-starter\2.4.2\spring-boot-starter-2.4.2.jar;C:\Users\sd003526\.m2\repository\org\springframework\boot\spring-boot\2.4.2\spring-boot-2.4.2.jar;C:\Users\sd003526\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.4.2\spring-boot-autoconfigure-2.4.2.jar;C:\Users\sd003526\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.4.2\spring-boot-starter-logging-2.4.2.jar;C:\Users\sd003526\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\sd003526\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\sd003526\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.13.3\log4j-to-slf4j-2.13.3.jar;C:\Users\sd003526\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\sd003526\.m2\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\Users\sd003526\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\sd003526\.m2\repository\org\yaml\snakeyaml\1.27\snakeyaml-1.27.jar;C:\Users\sd003526\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.4.2\spring-boot-starter-json-2.4.2.jar;C:\Users\sd003526\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.4\jackson-databind-2.11.4.jar;C:\Users\sd003526\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.4\jackson-core-2.11.4.jar;C:\Users\sd003526\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.11.4\jackson-datatype-jdk8-2.11.4.jar;C:\Users\sd003526\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.11.4\jackson-datatype-jsr310-2.11.4.jar;C:\Users\sd003526\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.11.4\jackson-module-parameter-names-2.11.4.jar;C:\Users\sd003526\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.4.2\spring-boot-starter-tomcat-2.4.2.jar;C:\Users\sd003526\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.41\tomcat-embed-core-9.0.41.jar;C:\Users\sd003526\.m2\repository\org\glassfish\jakarta.el\3.0.3\jakarta.el-3.0.3.jar;C:\Users\sd003526\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.41\tomcat-embed-websocket-9.0.41.jar;C:\Users\sd003526\.m2\repository\org\springframework\spring-web\5.3.3\spring-web-5.3.3.jar;C:\Users\sd003526\.m2\repository\org\springframework\spring-beans\5.3.3\spring-beans-5.3.3.jar;C:\Users\sd003526\.m2\repository\org\springframework\spring-webmvc\5.3.3\spring-webmvc-5.3.3.jar;C:\Users\sd003526\.m2\repository\org\springframework\spring-aop\5.3.3\spring-aop-5.3.3.jar;C:\Users\sd003526\.m2\repository\org\springframework\spring-expression\5.3.3\spring-expression-5.3.3.jar;C:\Users\sd003526\.m2\repository\org\springframework\boot\spring-boot-starter-webflux\2.4.2\spring-boot-starter-webflux-2.4.2.jar;C:\Users\sd003526\.m2\repository\org\springframework\boot\spring-boot-starter-reactor-netty\2.4.2\spring-boot-starter-reactor-netty-2.4.2.jar;C:\Users\sd003526\.m2\repository\io\projectreactor\netty\reactor-netty-http\1.0.3\reactor-netty-http-1.0.3.jar;C:\Users\sd003526\.m2\repository\io\netty\netty-codec-http\4.1.58.Final\netty-codec-http-4.1.58.Final.jar;C:\Users\sd003526\.m2\repository\io\netty\netty-common\4.1.58.Final\netty-common-4.1.58.Final.jar;C:\Users\sd003526\.m2\repository\io\netty\netty-buffer\4.1.58.Final\netty-buffer-4.1.58.Final.jar;C:\Users\sd003526\.m2\repository\io\netty\netty-transport\4.1.58.Final\netty-transport-4.1.58.Final.jar;C:\Users\sd003526\.m2\repository\io\netty\netty-codec\4.1.58.Final\netty-codec-4.1.58.Final.jar;C:\Users\sd003526\.m2\repository\io\netty\netty-codec-http2\4.1.58.Final\netty-codec-http2-4.1.58.Final.jar;C:\Users\sd003526\.m2\repository\io\netty\netty-resolver-dns\4.1.58.Final\netty-resolver-dns-4.1.58.Final.jar;C:\Users\sd003526\.m2\repository\io\netty\netty-resolver\4.1.58.Final\netty-resolver-4.1.58.Final.jar;C:\Users\sd003526\.m2\repository\io\netty\netty-codec-dns\4.1.58.Final\netty-codec-dns-4.1.58.Final.jar;C:\Users\sd003526\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.58.Final\netty-resolver-dns-native-macos-4.1.58.Final-osx-x86_64.jar;C:\Users\sd003526\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.58.Final\netty-transport-native-unix-common-4.1.58.Final.jar;C:\Users\sd003526\.m2\repository\io\netty\netty-transport-native-epoll\4.1.58.Final\netty-transport-native-epoll-4.1.58.Final-linux-x86_64.jar;C:\Users\sd003526\.m2\repository\io\projectreactor\netty\reactor-netty-core\1.0.3\reactor-netty-core-1.0.3.jar;C:\Users\sd003526\.m2\repository\io\netty\netty-handler-proxy\4.1.58.Final\netty-handler-proxy-4.1.58.Final.jar;C:\Users\sd003526\.m2\repository\io\netty\netty-codec-socks\4.1.58.Final\netty-codec-socks-4.1.58.Final.jar;C:\Users\sd003526\.m2\repository\org\springframework\spring-webflux\5.3.3\spring-webflux-5.3.3.jar;C:\Users\sd003526\.m2\repository\org\apache\kafka\kafka-streams\2.6.0\kafka-streams-2.6.0.jar;C:\Users\sd003526\.m2\repository\org\apache\kafka\kafka-clients\2.6.0\kafka-clients-2.6.0.jar;C:\Users\sd003526\.m2\repository\com\github\luben\zstd-jni\1.4.4-7\zstd-jni-1.4.4-7.jar;C:\Users\sd003526\.m2\repository\org\lz4\lz4-java\1.7.1\lz4-java-1.7.1.jar;C:\Users\sd003526\.m2\repository\org\xerial\snappy\snappy-java\1.1.7.3\snappy-java-1.1.7.3.jar;C:\Users\sd003526\.m2\repository\org\apache\kafka\connect-json\2.6.0\connect-json-2.6.0.jar;C:\Users\sd003526\.m2\repository\org\apache\kafka\connect-api\2.6.0\connect-api-2.6.0.jar;C:\Users\sd003526\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\sd003526\.m2\repository\org\rocksdb\rocksdbjni\5.18.4\rocksdbjni-5.18.4.jar;C:\Users\sd003526\.m2\repository\org\springframework\kafka\spring-kafka\2.6.5\spring-kafka-2.6.5.jar;C:\Users\sd003526\.m2\repository\org\springframework\spring-context\5.3.3\spring-context-5.3.3.jar;C:\Users\sd003526\.m2\repository\org\springframework\spring-messaging\5.3.3\spring-messaging-5.3.3.jar;C:\Users\sd003526\.m2\repository\org\springframework\spring-tx\5.3.3\spring-tx-5.3.3.jar;C:\Users\sd003526\.m2\repository\org\springframework\retry\spring-retry\1.3.1\spring-retry-1.3.1.jar;C:\Users\sd003526\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\sd003526\.m2\repository\org\projectlombok\lombok\1.18.16\lombok-1.18.16.jar;C:\Users\sd003526\.m2\repository\net\bytebuddy\byte-buddy\1.10.19\byte-buddy-1.10.19.jar;C:\Users\sd003526\.m2\repository\org\springframework\spring-core\5.3.3\spring-core-5.3.3.jar;C:\Users\sd003526\.m2\repository\org\springframework\spring-jcl\5.3.3\spring-jcl-5.3.3.jar;C:\Users\sd003526\.m2\repository\io\projectreactor\reactor-core\3.4.2\reactor-core-3.4.2.jar;C:\Users\sd003526\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\sd003526\.m2\repository\io\netty\netty-handler\4.1.58.Final\netty-handler-4.1.58.Final.jar;C:\Users\sd003526\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.4\jackson-annotations-2.11.4.jar;C:\Users\sd003526\.m2\repository\io\springfox\springfox-swagger2\2.9.2\springfox-swagger2-2.9.2.jar;C:\Users\sd003526\.m2\repository\io\swagger\swagger-annotations\1.5.20\swagger-annotations-1.5.20.jar;C:\Users\sd003526\.m2\repository\io\swagger\swagger-models\1.5.20\swagger-models-1.5.20.jar;C:\Users\sd003526\.m2\repository\io\springfox\springfox-spi\2.9.2\springfox-spi-2.9.2.jar;C:\Users\sd003526\.m2\repository\io\springfox\springfox-core\2.9.2\springfox-core-2.9.2.jar;C:\Users\sd003526\.m2\repository\io\springfox\springfox-schema\2.9.2\springfox-schema-2.9.2.jar;C:\Users\sd003526\.m2\repository\io\springfox\springfox-swagger-common\2.9.2\springfox-swagger-common-2.9.2.jar;C:\Users\sd003526\.m2\repository\io\springfox\springfox-spring-web\2.9.2\springfox-spring-web-2.9.2.jar;C:\Users\sd003526\.m2\repository\com\google\guava\guava\20.0\guava-20.0.jar;C:\Users\sd003526\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\sd003526\.m2\repository\org\springframework\plugin\spring-plugin-core\1.2.0.RELEASE\spring-plugin-core-1.2.0.RELEASE.jar;C:\Users\sd003526\.m2\repository\org\springframework\plugin\spring-plugin-metadata\1.2.0.RELEASE\spring-plugin-metadata-1.2.0.RELEASE.jar;C:\Users\sd003526\.m2\repository\org\mapstruct\mapstruct\1.2.0.Final\mapstruct-1.2.0.Final.jar;C:\Users\sd003526\.m2\repository\io\springfox\springfox-swagger-ui\2.9.2\springfox-swagger-ui-2.9.2.jar com.example.kafkaeventalarm.KafkaEventAlarmApplication
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.2)
+
+2021-05-18 08:04:04.215  INFO 1424 --- [           main] c.e.k.KafkaEventAlarmApplication         : Starting KafkaEventAlarmApplication using Java 11.0.10 on BID00112 with PID 1424 (C:\kafka-test\kafkastream-window\target\classes started by sd003526 in C:\kafka-test\kafkastream-statestore-migrated-to-another-instance)
+2021-05-18 08:04:04.222  INFO 1424 --- [           main] c.e.k.KafkaEventAlarmApplication         : No active profile set, falling back to default profiles: default
+2021-05-18 08:04:05.921  INFO 1424 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8282 (http)
+2021-05-18 08:04:05.933  INFO 1424 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-18 08:04:05.934  INFO 1424 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-18 08:04:06.057  INFO 1424 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-18 08:04:06.057  INFO 1424 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1775 ms
+2021-05-18 08:04:06.304  INFO 1424 --- [           main] org.apache.kafka.streams.StreamsConfig   : StreamsConfig values:
+	acceptable.recovery.lag = 10000
+	application.id = OrderStreamProcessorWindow
+	application.server =
+	bootstrap.servers = [localhost:29092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 0
+	client.id = OrderStreamProcessorWindow
+	commit.interval.ms = 5000
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.key.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class org.apache.kafka.common.serialization.Serdes$ByteArraySerde
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	partition.grouper = class org.apache.kafka.streams.processor.DefaultPartitionGrouper
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	replication.factor = 1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /tmp/kafka-streams
+	topology.optimization = none
+	upgrade.from = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2021-05-18 08:04:06.332  INFO 1424 --- [           main] org.apache.kafka.streams.KafkaStreams    : stream-client [OrderStreamProcessorWindow] Kafka Streams version: 2.6.0
+2021-05-18 08:04:06.332  INFO 1424 --- [           main] org.apache.kafka.streams.KafkaStreams    : stream-client [OrderStreamProcessorWindow] Kafka Streams commit ID: 62abe01bee039651
+2021-05-18 08:04:06.382  INFO 1424 --- [           main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values:
+	bootstrap.servers = [localhost:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = OrderStreamProcessorWindow-admin
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-05-18 08:04:06.439  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2021-05-18 08:04:06.440  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2021-05-18 08:04:06.440  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621339446437
+2021-05-18 08:04:06.442  INFO 1424 --- [           main] o.a.k.s.p.internals.StreamThread         : stream-thread [OrderStreamProcessorWindow-StreamThread-1] Creating restore consumer client
+2021-05-18 08:04:06.447  INFO 1424 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values:
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:29092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = OrderStreamProcessorWindow-StreamThread-1-restore-consumer
+	client.rack =
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2021-05-18 08:04:06.485  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2021-05-18 08:04:06.485  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2021-05-18 08:04:06.485  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621339446485
+2021-05-18 08:04:06.492  INFO 1424 --- [           main] o.a.k.s.p.internals.StreamThread         : stream-thread [OrderStreamProcessorWindow-StreamThread-1] Creating thread producer client
+2021-05-18 08:04:06.495  INFO 1424 --- [           main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values:
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:29092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = OrderStreamProcessorWindow-StreamThread-1-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 100
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 10000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2021-05-18 08:04:06.526  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2021-05-18 08:04:06.526  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2021-05-18 08:04:06.527  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621339446526
+2021-05-18 08:04:06.533  INFO 1424 --- [           main] o.a.k.s.p.internals.StreamThread         : stream-thread [OrderStreamProcessorWindow-StreamThread-1] Creating consumer client
+2021-05-18 08:04:06.537  INFO 1424 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values:
+	allow.auto.create.topics = false
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:29092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = OrderStreamProcessorWindow-StreamThread-1-consumer
+	client.rack =
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = OrderStreamProcessorWindow
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2021-05-18 08:04:06.555  INFO 1424 --- [           main] o.a.k.s.p.i.a.AssignorConfiguration      : stream-thread [OrderStreamProcessorWindow-StreamThread-1-consumer] Cooperative rebalancing enabled now
+2021-05-18 08:04:06.579  WARN 1424 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'admin.retry.backoff.ms' was supplied but isn't a known config.
+2021-05-18 08:04:06.580  WARN 1424 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'admin.retries' was supplied but isn't a known config.
+2021-05-18 08:04:06.580  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2021-05-18 08:04:06.580  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2021-05-18 08:04:06.580  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621339446580
+2021-05-18 08:04:06.600  INFO 1424 --- [           main] o.a.k.s.p.internals.StateDirectory       : stream-thread [main] Deleting obsolete state directory 0_0 for task 0_0 as 1ms has elapsed (cleanup delay is 0ms).
+2021-05-18 08:04:06.607  INFO 1424 --- [           main] o.a.k.s.p.internals.StateDirectory       : stream-thread [main] Deleting obsolete state directory 1_0 for task 1_0 as 87624260ms has elapsed (cleanup delay is 0ms).
+2021-05-18 08:04:06.725  INFO 1424 --- [           main] org.apache.kafka.streams.KafkaStreams    : stream-client [OrderStreamProcessorWindow] State transition from CREATED to REBALANCING
+2021-05-18 08:04:06.725  INFO 1424 --- [-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [OrderStreamProcessorWindow-StreamThread-1] Starting
+2021-05-18 08:04:06.726  INFO 1424 --- [-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [OrderStreamProcessorWindow-StreamThread-1] State transition from CREATED to STARTING
+2021-05-18 08:04:06.727  INFO 1424 --- [-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Subscribed to topic(s): OrderStreamProcessorWindow-countsWindow-repartition, orders-window
+2021-05-18 08:04:07.010  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 2 : {orders-window=UNKNOWN_TOPIC_OR_PARTITION, OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:07.011  INFO 1424 --- [read-1-producer] org.apache.kafka.clients.Metadata        : [Producer clientId=OrderStreamProcessorWindow-StreamThread-1-producer] Cluster ID: xf_ukUwWSDuKM89P1Z0tFw
+2021-05-18 08:04:07.011  INFO 1424 --- [-StreamThread-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Cluster ID: xf_ukUwWSDuKM89P1Z0tFw
+2021-05-18 08:04:07.115  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 5 : {orders-window=UNKNOWN_TOPIC_OR_PARTITION, OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:07.243  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 7 : {orders-window=UNKNOWN_TOPIC_OR_PARTITION, OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:07.350  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 10 : {orders-window=UNKNOWN_TOPIC_OR_PARTITION, OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:07.382  INFO 1424 --- [           main] org.apache.kafka.streams.StreamsConfig   : StreamsConfig values:
+	acceptable.recovery.lag = 10000
+	application.id = default
+	application.server =
+	bootstrap.servers = [localhost:29092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id =
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.key.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	partition.grouper = class org.apache.kafka.streams.processor.DefaultPartitionGrouper
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	replication.factor = 1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /tmp/kafka-streams
+	topology.optimization = none
+	upgrade.from = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2021-05-18 08:04:07.417  INFO 1424 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-18 08:04:07.471  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 13 : {orders-window=UNKNOWN_TOPIC_OR_PARTITION, OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:07.577  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 16 : {orders-window=UNKNOWN_TOPIC_OR_PARTITION, OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:07.698  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 19 : {orders-window=UNKNOWN_TOPIC_OR_PARTITION, OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:07.707  INFO 1424 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-18 08:04:07.803  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 21 : {orders-window=UNKNOWN_TOPIC_OR_PARTITION, OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:07.907  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 23 : {orders-window=UNKNOWN_TOPIC_OR_PARTITION, OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:08.011  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 25 : {orders-window=UNKNOWN_TOPIC_OR_PARTITION, OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:08.053  INFO 1424 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-05-18 08:04:08.118  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 27 : {orders-window=UNKNOWN_TOPIC_OR_PARTITION, OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:08.147  INFO 1424 --- [           main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values:
+	bootstrap.servers = [localhost:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id =
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-05-18 08:04:08.153  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2021-05-18 08:04:08.153  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2021-05-18 08:04:08.153  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621339448153
+2021-05-18 08:04:08.256  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 30 : {orders-window=UNKNOWN_TOPIC_OR_PARTITION, OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:08.268  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Discovered group coordinator localhost:29092 (id: 2147483646 rack: null)
+2021-05-18 08:04:08.272  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] (Re-)joining group
+2021-05-18 08:04:08.347  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2021-05-18 08:04:08.347  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] (Re-)joining group
+2021-05-18 08:04:08.357  INFO 1424 --- [           main] org.apache.kafka.streams.StreamsConfig   : StreamsConfig values:
+	acceptable.recovery.lag = 10000
+	application.id = OrderStreamProcessorWindow
+	application.server =
+	bootstrap.servers = [localhost:29092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 0
+	client.id = OrderStreamProcessorWindow
+	commit.interval.ms = 5000
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.key.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class org.apache.kafka.common.serialization.Serdes$ByteArraySerde
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	partition.grouper = class org.apache.kafka.streams.processor.DefaultPartitionGrouper
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	replication.factor = 1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /tmp/kafka-streams
+	topology.optimization = none
+	upgrade.from = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2021-05-18 08:04:08.361  INFO 1424 --- [           main] org.apache.kafka.streams.KafkaStreams    : stream-client [OrderStreamProcessorWindow] Kafka Streams version: 2.6.0
+2021-05-18 08:04:08.362  INFO 1424 --- [           main] org.apache.kafka.streams.KafkaStreams    : stream-client [OrderStreamProcessorWindow] Kafka Streams commit ID: 62abe01bee039651
+2021-05-18 08:04:08.364  INFO 1424 --- [           main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values:
+	bootstrap.servers = [localhost:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = OrderStreamProcessorWindow-admin
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-05-18 08:04:08.370  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 35 : {OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:08.372  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2021-05-18 08:04:08.373  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2021-05-18 08:04:08.373  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621339448372
+2021-05-18 08:04:08.391  WARN 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Error registering AppInfo mbean
+
+javax.management.InstanceAlreadyExistsException: kafka.admin.client:type=app-info,id=OrderStreamProcessorWindow-admin
+	at java.management/com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:436) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1855) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:955) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:890) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:320) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:na]
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:64) ~[kafka-clients-2.6.0.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient.<init>(KafkaAdminClient.java:549) ~[kafka-clients-2.6.0.jar:na]
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:492) ~[kafka-clients-2.6.0.jar:na]
+	at org.apache.kafka.clients.admin.Admin.create(Admin.java:73) ~[kafka-clients-2.6.0.jar:na]
+	at org.apache.kafka.streams.processor.internals.DefaultKafkaClientSupplier.getAdmin(DefaultKafkaClientSupplier.java:41) ~[kafka-streams-2.6.0.jar:na]
+	at org.apache.kafka.streams.KafkaStreams.<init>(KafkaStreams.java:767) ~[kafka-streams-2.6.0.jar:na]
+	at org.apache.kafka.streams.KafkaStreams.<init>(KafkaStreams.java:583) ~[kafka-streams-2.6.0.jar:na]
+	at org.springframework.kafka.config.StreamsBuilderFactoryBean.start(StreamsBuilderFactoryBean.java:316) ~[spring-kafka-2.6.5.jar:2.6.5]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.3.jar:5.3.3]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:940) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.4.2.jar:2.4.2]
+	at com.example.kafkaeventalarm.KafkaEventAlarmApplication.main(KafkaEventAlarmApplication.java:12) ~[classes/:na]
+
+2021-05-18 08:04:08.393  INFO 1424 --- [           main] o.a.k.s.p.internals.StreamThread         : stream-thread [OrderStreamProcessorWindow-StreamThread-1] Creating restore consumer client
+2021-05-18 08:04:08.398  INFO 1424 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values:
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [localhost:29092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = OrderStreamProcessorWindow-StreamThread-1-restore-consumer
+	client.rack =
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2021-05-18 08:04:08.414  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2021-05-18 08:04:08.414  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2021-05-18 08:04:08.415  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621339448414
+2021-05-18 08:04:08.419  WARN 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Error registering AppInfo mbean
+
+javax.management.InstanceAlreadyExistsException: kafka.consumer:type=app-info,id=OrderStreamProcessorWindow-StreamThread-1-restore-consumer
+	at java.management/com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:436) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1855) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:955) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:890) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:320) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:na]
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:64) ~[kafka-clients-2.6.0.jar:na]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:814) ~[kafka-clients-2.6.0.jar:na]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:632) ~[kafka-clients-2.6.0.jar:na]
+	at org.apache.kafka.streams.processor.internals.DefaultKafkaClientSupplier.getRestoreConsumer(DefaultKafkaClientSupplier.java:56) ~[kafka-streams-2.6.0.jar:na]
+	at org.apache.kafka.streams.processor.internals.StreamThread.create(StreamThread.java:304) ~[kafka-streams-2.6.0.jar:na]
+	at org.apache.kafka.streams.KafkaStreams.<init>(KafkaStreams.java:772) ~[kafka-streams-2.6.0.jar:na]
+	at org.apache.kafka.streams.KafkaStreams.<init>(KafkaStreams.java:583) ~[kafka-streams-2.6.0.jar:na]
+	at org.springframework.kafka.config.StreamsBuilderFactoryBean.start(StreamsBuilderFactoryBean.java:316) ~[spring-kafka-2.6.5.jar:2.6.5]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.3.jar:5.3.3]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:940) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.4.2.jar:2.4.2]
+	at com.example.kafkaeventalarm.KafkaEventAlarmApplication.main(KafkaEventAlarmApplication.java:12) ~[classes/:na]
+
+2021-05-18 08:04:08.420  INFO 1424 --- [           main] o.a.k.s.p.internals.StreamThread         : stream-thread [OrderStreamProcessorWindow-StreamThread-1] Creating thread producer client
+2021-05-18 08:04:08.420  INFO 1424 --- [           main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values:
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:29092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = OrderStreamProcessorWindow-StreamThread-1-producer
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 100
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 10000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2021-05-18 08:04:08.430  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2021-05-18 08:04:08.430  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2021-05-18 08:04:08.431  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621339448430
+2021-05-18 08:04:08.431  WARN 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Error registering AppInfo mbean
+
+javax.management.InstanceAlreadyExistsException: kafka.producer:type=app-info,id=OrderStreamProcessorWindow-StreamThread-1-producer
+	at java.management/com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:436) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1855) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:955) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:890) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:320) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:na]
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:64) ~[kafka-clients-2.6.0.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.<init>(KafkaProducer.java:435) ~[kafka-clients-2.6.0.jar:na]
+	at org.apache.kafka.clients.producer.KafkaProducer.<init>(KafkaProducer.java:290) ~[kafka-clients-2.6.0.jar:na]
+	at org.apache.kafka.streams.processor.internals.DefaultKafkaClientSupplier.getProducer(DefaultKafkaClientSupplier.java:46) ~[kafka-streams-2.6.0.jar:na]
+	at org.apache.kafka.streams.processor.internals.StreamsProducer.<init>(StreamsProducer.java:128) ~[kafka-streams-2.6.0.jar:na]
+	at org.apache.kafka.streams.processor.internals.ActiveTaskCreator.<init>(ActiveTaskCreator.java:101) ~[kafka-streams-2.6.0.jar:na]
+	at org.apache.kafka.streams.processor.internals.StreamThread.create(StreamThread.java:317) ~[kafka-streams-2.6.0.jar:na]
+	at org.apache.kafka.streams.KafkaStreams.<init>(KafkaStreams.java:772) ~[kafka-streams-2.6.0.jar:na]
+	at org.apache.kafka.streams.KafkaStreams.<init>(KafkaStreams.java:583) ~[kafka-streams-2.6.0.jar:na]
+	at org.springframework.kafka.config.StreamsBuilderFactoryBean.start(StreamsBuilderFactoryBean.java:316) ~[spring-kafka-2.6.5.jar:2.6.5]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.3.jar:5.3.3]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:940) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.4.2.jar:2.4.2]
+	at com.example.kafkaeventalarm.KafkaEventAlarmApplication.main(KafkaEventAlarmApplication.java:12) ~[classes/:na]
+
+2021-05-18 08:04:08.433  INFO 1424 --- [           main] o.a.k.s.p.internals.StreamThread         : stream-thread [OrderStreamProcessorWindow-StreamThread-1] Creating consumer client
+2021-05-18 08:04:08.437  INFO 1424 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values:
+	allow.auto.create.topics = false
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:29092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = OrderStreamProcessorWindow-StreamThread-1-consumer
+	client.rack =
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = OrderStreamProcessorWindow
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = false
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2021-05-18 08:04:08.443  INFO 1424 --- [           main] o.a.k.s.p.i.a.AssignorConfiguration      : stream-thread [OrderStreamProcessorWindow-StreamThread-1-consumer] Cooperative rebalancing enabled now
+2021-05-18 08:04:08.446  WARN 1424 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'admin.retry.backoff.ms' was supplied but isn't a known config.
+2021-05-18 08:04:08.447  WARN 1424 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'admin.retries' was supplied but isn't a known config.
+2021-05-18 08:04:08.447  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2021-05-18 08:04:08.447  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2021-05-18 08:04:08.447  INFO 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621339448447
+2021-05-18 08:04:08.448  WARN 1424 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Error registering AppInfo mbean
+
+javax.management.InstanceAlreadyExistsException: kafka.consumer:type=app-info,id=OrderStreamProcessorWindow-StreamThread-1-consumer
+	at java.management/com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:436) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1855) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:955) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:890) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:320) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:na]
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:64) ~[kafka-clients-2.6.0.jar:na]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:814) ~[kafka-clients-2.6.0.jar:na]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:632) ~[kafka-clients-2.6.0.jar:na]
+	at org.apache.kafka.streams.processor.internals.DefaultKafkaClientSupplier.getConsumer(DefaultKafkaClientSupplier.java:51) ~[kafka-streams-2.6.0.jar:na]
+	at org.apache.kafka.streams.processor.internals.StreamThread.create(StreamThread.java:369) ~[kafka-streams-2.6.0.jar:na]
+	at org.apache.kafka.streams.KafkaStreams.<init>(KafkaStreams.java:772) ~[kafka-streams-2.6.0.jar:na]
+	at org.apache.kafka.streams.KafkaStreams.<init>(KafkaStreams.java:583) ~[kafka-streams-2.6.0.jar:na]
+	at org.springframework.kafka.config.StreamsBuilderFactoryBean.start(StreamsBuilderFactoryBean.java:316) ~[spring-kafka-2.6.5.jar:2.6.5]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.3.jar:5.3.3]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:940) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.4.2.jar:2.4.2]
+	at com.example.kafkaeventalarm.KafkaEventAlarmApplication.main(KafkaEventAlarmApplication.java:12) ~[classes/:na]
+
+2021-05-18 08:04:08.452  INFO 1424 --- [           main] org.apache.kafka.streams.KafkaStreams    : stream-client [OrderStreamProcessorWindow] State transition from CREATED to REBALANCING
+2021-05-18 08:04:08.453  INFO 1424 --- [-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [OrderStreamProcessorWindow-StreamThread-1] Starting
+2021-05-18 08:04:08.454  INFO 1424 --- [-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [OrderStreamProcessorWindow-StreamThread-1] State transition from CREATED to STARTING
+2021-05-18 08:04:08.455  INFO 1424 --- [-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Subscribed to topic(s): OrderStreamProcessorWindow-countsWindow-repartition, orders-window
+2021-05-18 08:04:08.464  INFO 1424 --- [read-1-producer] org.apache.kafka.clients.Metadata        : [Producer clientId=OrderStreamProcessorWindow-StreamThread-1-producer] Cluster ID: xf_ukUwWSDuKM89P1Z0tFw
+2021-05-18 08:04:08.478  INFO 1424 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8282 (http) with context path ''
+2021-05-18 08:04:08.481  INFO 1424 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-18 08:04:08.494  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 36 : {OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:08.500  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 2 : {OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:08.502  INFO 1424 --- [-StreamThread-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Cluster ID: xf_ukUwWSDuKM89P1Z0tFw
+2021-05-18 08:04:08.504  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Discovered group coordinator localhost:29092 (id: 2147483646 rack: null)
+2021-05-18 08:04:08.506  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] (Re-)joining group
+2021-05-18 08:04:08.532  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group.
+2021-05-18 08:04:08.533  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] (Re-)joining group
+2021-05-18 08:04:08.539  INFO 1424 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-18 08:04:08.595  INFO 1424 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-18 08:04:08.598  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 37 : {OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:08.612  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 7 : {OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:08.736  WARN 1424 --- [-StreamThread-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Error while fetching metadata with correlation id 8 : {OrderStreamProcessorWindow-countsWindow-repartition=UNKNOWN_TOPIC_OR_PARTITION}
+2021-05-18 08:04:08.893  INFO 1424 --- [-StreamThread-1] a.k.s.p.i.a.HighAvailabilityTaskAssignor : Decided on assignment: {f6b5df82-907f-4c8f-9536-5ede1d650d87=[activeTasks: ([0_0, 1_0]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) prevOwnedPartitionsByConsumerId: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([1_0=0]) capacity: 1 assigned: 2]} with no followup probing rebalance.
+2021-05-18 08:04:08.894  INFO 1424 --- [-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [OrderStreamProcessorWindow-StreamThread-1-consumer] Assigned tasks to clients as
+f6b5df82-907f-4c8f-9536-5ede1d650d87=[activeTasks: ([0_0, 1_0]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) prevOwnedPartitionsByConsumerId: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([1_0=0]) capacity: 1 assigned: 2].
+2021-05-18 08:04:08.900  INFO 1424 --- [-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [OrderStreamProcessorWindow-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2021-05-18 08:04:08.901  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Finished assignment for group at generation 1: {OrderStreamProcessorWindow-StreamThread-1-consumer-6b106474-f8de-4b02-8a33-73ffa86d56e3=Assignment(partitions=[OrderStreamProcessorWindow-countsWindow-repartition-0, orders-window-0], userDataSize=56)}
+2021-05-18 08:04:08.918  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Join group failed with org.apache.kafka.common.errors.RebalanceInProgressException: The group is rebalancing, so a rejoin is needed.
+2021-05-18 08:04:08.918  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] (Re-)joining group
+2021-05-18 08:04:08.950  INFO 1424 --- [-StreamThread-1] a.k.s.p.i.a.HighAvailabilityTaskAssignor : Decided on assignment: {f6b5df82-907f-4c8f-9536-5ede1d650d87=[activeTasks: ([1_0]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) prevOwnedPartitionsByConsumerId: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([1_0=0]) capacity: 1 assigned: 1], 67d45317-89a0-4764-9de1-d7d0cbda3996=[activeTasks: ([0_0]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) prevOwnedPartitionsByConsumerId: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([1_0=0]) capacity: 1 assigned: 1]} with no followup probing rebalance.
+2021-05-18 08:04:08.950  INFO 1424 --- [-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [OrderStreamProcessorWindow-StreamThread-1-consumer] Assigned tasks to clients as
+67d45317-89a0-4764-9de1-d7d0cbda3996=[activeTasks: ([0_0]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) prevOwnedPartitionsByConsumerId: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([1_0=0]) capacity: 1 assigned: 1]
+f6b5df82-907f-4c8f-9536-5ede1d650d87=[activeTasks: ([1_0]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) prevOwnedPartitionsByConsumerId: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([1_0=0]) capacity: 1 assigned: 1].
+2021-05-18 08:04:08.951  INFO 1424 --- [-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [OrderStreamProcessorWindow-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2021-05-18 08:04:08.951  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Finished assignment for group at generation 2: {OrderStreamProcessorWindow-StreamThread-1-consumer-833713d5-c885-4cb9-b2c6-bf3f1866077f=Assignment(partitions=[orders-window-0], userDataSize=48), OrderStreamProcessorWindow-StreamThread-1-consumer-6b106474-f8de-4b02-8a33-73ffa86d56e3=Assignment(partitions=[OrderStreamProcessorWindow-countsWindow-repartition-0], userDataSize=48)}
+2021-05-18 08:04:08.971  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Successfully joined group with generation 2
+2021-05-18 08:04:08.971  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Successfully joined group with generation 2
+2021-05-18 08:04:08.972  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Updating assignment with
+	Assigned partitions:                       [orders-window-0]
+	Current owned partitions:                  []
+	Added partitions (assigned - owned):       [orders-window-0]
+	Revoked partitions (owned - assigned):     []
+
+2021-05-18 08:04:08.972  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Notifying assignor about the new Assignment(partitions=[orders-window-0], userDataSize=48)
+2021-05-18 08:04:08.972  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Updating assignment with
+	Assigned partitions:                       [OrderStreamProcessorWindow-countsWindow-repartition-0]
+	Current owned partitions:                  []
+	Added partitions (assigned - owned):       [OrderStreamProcessorWindow-countsWindow-repartition-0]
+	Revoked partitions (owned - assigned):     []
+
+2021-05-18 08:04:08.972  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Notifying assignor about the new Assignment(partitions=[OrderStreamProcessorWindow-countsWindow-repartition-0], userDataSize=48)
+2021-05-18 08:04:08.975  INFO 1424 --- [-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [OrderStreamProcessorWindow-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2021-05-18 08:04:08.975  INFO 1424 --- [-StreamThread-1] o.a.k.s.p.i.StreamsPartitionAssignor     : stream-thread [OrderStreamProcessorWindow-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2021-05-18 08:04:08.977  INFO 1424 --- [-StreamThread-1] o.a.k.s.processor.internals.TaskManager  : stream-thread [OrderStreamProcessorWindow-StreamThread-1] Handle new assignment with:
+	New active tasks: [1_0]
+	New standby tasks: []
+	Existing active tasks: []
+	Existing standby tasks: []
+2021-05-18 08:04:08.977  INFO 1424 --- [-StreamThread-1] o.a.k.s.processor.internals.TaskManager  : stream-thread [OrderStreamProcessorWindow-StreamThread-1] Handle new assignment with:
+	New active tasks: [0_0]
+	New standby tasks: []
+	Existing active tasks: []
+	Existing standby tasks: []
+2021-05-18 08:04:09.006  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Adding newly assigned partitions: orders-window-0
+2021-05-18 08:04:09.006  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Adding newly assigned partitions: OrderStreamProcessorWindow-countsWindow-repartition-0
+2021-05-18 08:04:09.006  INFO 1424 --- [-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [OrderStreamProcessorWindow-StreamThread-1] State transition from STARTING to PARTITIONS_ASSIGNED
+2021-05-18 08:04:09.006  INFO 1424 --- [-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [OrderStreamProcessorWindow-StreamThread-1] State transition from STARTING to PARTITIONS_ASSIGNED
+2021-05-18 08:04:09.021  INFO 1424 --- [           main] c.e.k.KafkaEventAlarmApplication         : Started KafkaEventAlarmApplication in 5.859 seconds (JVM running for 7.787)
+2021-05-18 08:04:09.047  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Found no committed offset for partition orders-window-0
+2021-05-18 08:04:09.052  INFO 1424 --- [-StreamThread-1] o.a.k.s.p.i.ProcessorStateManager        : stream-thread [OrderStreamProcessorWindow-StreamThread-1] task [1_0] State store countsWindow did not find checkpoint offset, hence would default to the starting offset at changelog OrderStreamProcessorWindow-countsWindow-changelog-0
+2021-05-18 08:04:09.053  INFO 1424 --- [-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [OrderStreamProcessorWindow-StreamThread-1] task [1_0] Initialized
+2021-05-18 08:04:09.058  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Resetting offset for partition orders-window-0 to offset 0.
+2021-05-18 08:04:09.059  INFO 1424 --- [-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [OrderStreamProcessorWindow-StreamThread-1] task [0_0] Initialized
+2021-05-18 08:04:09.062  INFO 1424 --- [-StreamThread-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-restore-consumer, groupId=null] Subscribed to partition(s): OrderStreamProcessorWindow-countsWindow-changelog-0
+2021-05-18 08:04:09.064  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Found no committed offset for partition orders-window-0
+2021-05-18 08:04:09.064  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-restore-consumer, groupId=null] Seeking to EARLIEST offset of partition OrderStreamProcessorWindow-countsWindow-changelog-0
+2021-05-18 08:04:09.070  INFO 1424 --- [-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [OrderStreamProcessorWindow-StreamThread-1] task [0_0] Restored and ready to run
+2021-05-18 08:04:09.071  INFO 1424 --- [-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [OrderStreamProcessorWindow-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2021-05-18 08:04:09.072  INFO 1424 --- [-StreamThread-1] org.apache.kafka.streams.KafkaStreams    : stream-client [OrderStreamProcessorWindow] State transition from REBALANCING to RUNNING
+2021-05-18 08:04:09.074  INFO 1424 --- [-StreamThread-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-restore-consumer, groupId=null] Cluster ID: xf_ukUwWSDuKM89P1Z0tFw
+2021-05-18 08:04:09.075  INFO 1424 --- [ProcessorWindow] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Found no committed offset for partition OrderStreamProcessorWindow-countsWindow-repartition-0
+2021-05-18 08:04:09.084  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-restore-consumer, groupId=null] Resetting offset for partition OrderStreamProcessorWindow-countsWindow-changelog-0 to offset 0.
+2021-05-18 08:04:09.186  INFO 1424 --- [-StreamThread-1] o.a.k.s.p.i.StoreChangelogReader         : stream-thread [OrderStreamProcessorWindow-StreamThread-1] Finished restoring changelog OrderStreamProcessorWindow-countsWindow-changelog-0 to store countsWindow with a total number of 0 records
+2021-05-18 08:04:09.193  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Resetting offset for partition OrderStreamProcessorWindow-countsWindow-repartition-0 to offset 0.
+2021-05-18 08:04:09.194  INFO 1424 --- [-StreamThread-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=OrderStreamProcessorWindow-StreamThread-1-consumer, groupId=OrderStreamProcessorWindow] Found no committed offset for partition OrderStreamProcessorWindow-countsWindow-repartition-0
+2021-05-18 08:04:09.205  INFO 1424 --- [-StreamThread-1] o.a.k.s.processor.internals.StreamTask   : stream-thread [OrderStreamProcessorWindow-StreamThread-1] task [1_0] Restored and ready to run
+2021-05-18 08:04:09.205  INFO 1424 --- [-StreamThread-1] o.a.k.s.p.internals.StreamThread         : stream-thread [OrderStreamProcessorWindow-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2021-05-18 08:04:09.205  INFO 1424 --- [-StreamThread-1] org.apache.kafka.streams.KafkaStreams    : stream-client [OrderStreamProcessorWindow] State transition from REBALANCING to RUNNING
+2021-05-18 08:06:41.290  INFO 1424 --- [nio-8282-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-18 08:06:41.290  INFO 1424 --- [nio-8282-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-18 08:06:41.292  INFO 1424 --- [nio-8282-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-05-18 08:06:54.247  INFO 1424 --- [nio-8282-exec-9] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values:
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:29092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = true
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2021-05-18 08:06:54.264  WARN 1424 --- [nio-8282-exec-9] o.a.k.clients.producer.ProducerConfig    : The configuration 'spring.json.trusted.packages' was supplied but isn't a known config.
+2021-05-18 08:06:54.264  INFO 1424 --- [nio-8282-exec-9] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.6.0
+2021-05-18 08:06:54.264  INFO 1424 --- [nio-8282-exec-9] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 62abe01bee039651
+2021-05-18 08:06:54.265  INFO 1424 --- [nio-8282-exec-9] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1621339614264
+2021-05-18 08:06:54.279  INFO 1424 --- [ad | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: xf_ukUwWSDuKM89P1Z0tFw
+KafkaStreamOrderProcessorWindow Key=string  value=Order(orderId=string, product=string, orderTimestamp=string, status=string)
+2021-05-18 08:06:54.766  INFO 1424 --- [-StreamThread-1] o.a.k.s.s.i.RocksDBTimestampedStore      : Opening store countsWindow.1621339200000 in regular mode
+2021-05-18 08:07:27.770 ERROR 1424 --- [nio-8282-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.kafka.streams.errors.InvalidStateStoreException: The state store, orders-status-window-count, may have migrated to another instance.] with root cause
+
+org.apache.kafka.streams.errors.InvalidStateStoreException: The state store, orders-status-window-count, may have migrated to another instance.
+	at org.apache.kafka.streams.state.internals.QueryableStoreProvider.getStore(QueryableStoreProvider.java:76) ~[kafka-streams-2.6.0.jar:na]
+	at org.apache.kafka.streams.KafkaStreams.store(KafkaStreams.java:1208) ~[kafka-streams-2.6.0.jar:na]
+	at org.apache.kafka.streams.KafkaStreams.store(KafkaStreams.java:1194) ~[kafka-streams-2.6.0.jar:na]
+	at com.example.kafkaeventalarm.stream.KafkaStreamOrderProcessorWindow.getInteractiveQueryCountLastMinute(KafkaStreamOrderProcessorWindow.java:95) ~[classes/:na]
+	at com.example.kafkaeventalarm.controller.KafkaPOCController.getInteractiveQueryCountLastMinute(KafkaPOCController.java:39) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+
+Process finished with exit code -1
