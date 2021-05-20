@@ -46,9 +46,6 @@ public class KafkaStreamOrderProcessorWindow {
 
         Map<String, Object> serdeProps = new HashMap<>();
         Serde<Order> orderSerde = SerdeFactory.createSerde(Order.class, serdeProps);
-
-        // Serializers/deserializers (serde) for String and Long types
-        final Serde<Integer> integerSerde = Serdes.Integer();
         final Serde<String> stringSerde = Serdes.String();
         final Serde<Long> longSerde = Serdes.Long();
 
@@ -61,10 +58,10 @@ public class KafkaStreamOrderProcessorWindow {
                 .selectKey((key, value) -> value.getStatus())
                 .groupBy((s, order) -> order.getStatus(), Grouped.with(stringSerde, orderSerde))
                 .windowedBy(TimeWindows.of(Duration.ofMinutes(1L)))
-                .count(Materialized.as("countsWindow"))
-                .toStream()
-                .map((Windowed<String> key, Long count) -> new KeyValue<>(key.key(), count))
-                .to(orderStreamWindowOutput, Produced.with(stringSerde, longSerde));
+                .count(Materialized.as("countsWindow"));
+                //.toStream()
+                //.map((Windowed<String> key, Long count) -> new KeyValue<>(key.key(), count))
+                //.to(orderStreamWindowOutput, Produced.with(stringSerde, longSerde));
 
         streams = new KafkaStreams(builder.build(), streamsBuilderFactoryBean.getStreamsConfiguration());
         // Clean local store between runs
@@ -90,9 +87,9 @@ public class KafkaStreamOrderProcessorWindow {
 
     // il faut avoir une WINDOW ...
     public ReadOnlyKeyValueStore<String, Long> getInteractiveQueryCountLastMinute() throws Exception {
-        //return waitUntilStoreIsQueryable(orderStreamWindowOutput, QueryableStoreTypes.keyValueStore(), streams);
+        return waitUntilStoreIsQueryable("countsWindow", QueryableStoreTypes.keyValueStore(), streams);
 
-        return streams.store(orderStreamWindowOutput, QueryableStoreTypes.keyValueStore());
+        //return streams.store("countsWindow", QueryableStoreTypes.keyValueStore());
     }
 
     @PreDestroy
