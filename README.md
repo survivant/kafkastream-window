@@ -42,7 +42,7 @@ Project package structure description :
 
 To launch Kafka : go into "src/test/resources/docker-compose.yml"
 
-docker-compose up -V
+docker-compose up -V --remove-orphans
 
 
 Access Swagger-UI

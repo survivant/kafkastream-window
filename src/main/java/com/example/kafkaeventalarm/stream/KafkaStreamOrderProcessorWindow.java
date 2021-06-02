@@ -7,11 +7,10 @@ import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.KafkaStreams;
 import org.apache.kafka.streams.KeyValue;
 import org.apache.kafka.streams.StreamsBuilder;
-import org.apache.kafka.streams.errors.InvalidStateStoreException;
 import org.apache.kafka.streams.kstream.*;
-import org.apache.kafka.streams.state.QueryableStoreType;
 import org.apache.kafka.streams.state.QueryableStoreTypes;
 import org.apache.kafka.streams.state.ReadOnlyKeyValueStore;
+import org.apache.kafka.streams.state.ReadOnlyWindowStore;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +26,7 @@ import java.util.Map;
 
 @Service
 public class KafkaStreamOrderProcessorWindow {
-    private final Logger logger = LoggerFactory.getLogger(KafkaStreamOrderProcessorWindow.class);
+    private static final Logger logger = LoggerFactory.getLogger(KafkaStreamOrderProcessorWindow.class);
 
     @Value("${order.window.topic.name}")
     private String inputTopicWindow;
@@ -58,38 +57,23 @@ public class KafkaStreamOrderProcessorWindow {
                 .selectKey((key, value) -> value.getStatus())
                 .groupBy((s, order) -> order.getStatus(), Grouped.with(stringSerde, orderSerde))
                 .windowedBy(TimeWindows.of(Duration.ofMinutes(1L)))
-                .count(Materialized.as("countsWindow"));
-                //.toStream()
-                //.map((Windowed<String> key, Long count) -> new KeyValue<>(key.key(), count))
-                //.to(orderStreamWindowOutput, Produced.with(stringSerde, longSerde));
+                .count(Materialized.as("countsWindow"))
+                .toStream()
+                .map((Windowed<String> key, Long count) -> new KeyValue<>(key.key(), count))
+                .to(orderStreamWindowOutput, Produced.with(stringSerde, longSerde));
 
         streams = new KafkaStreams(builder.build(), streamsBuilderFactoryBean.getStreamsConfiguration());
         // Clean local store between runs
         streams.cleanUp();
         streams.start();
-
     }
 
-    // Example: Wait until the store of type T is queryable.  When it is, return a reference to the store.
-    public static <T> T waitUntilStoreIsQueryable(final String storeName,
-                                                  final QueryableStoreType<T> queryableStoreType,
-                                                  final KafkaStreams streams) throws InterruptedException {
-        while (true) {
-            try {
-                return streams.store(storeName, queryableStoreType);
-            } catch (InvalidStateStoreException ignored) {
-                ignored.printStackTrace();
-                // store not yet ready for querying
-                Thread.sleep(1000);
-            }
-        }
+    public ReadOnlyWindowStore<String, Order> getInteractiveQueryCountLastMinute() throws Exception {
+        return streams.store("countsWindow", QueryableStoreTypes.windowStore());
     }
 
-    // il faut avoir une WINDOW ...
-    public ReadOnlyKeyValueStore<String, Long> getInteractiveQueryCountLastMinute() throws Exception {
-        return waitUntilStoreIsQueryable("countsWindow", QueryableStoreTypes.keyValueStore(), streams);
-
-        //return streams.store("countsWindow", QueryableStoreTypes.keyValueStore());
+    public ReadOnlyKeyValueStore<String, Long> getInteractiveQueryCountWindowOutput() throws Exception {
+        return streams.store(orderStreamWindowOutput, QueryableStoreTypes.keyValueStore());
     }
 
     @PreDestroy

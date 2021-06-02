@@ -5,8 +5,6 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import org.apache.kafka.streams.KeyValue;
-import org.apache.kafka.streams.state.KeyValueIterator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -34,17 +32,37 @@ public class KafkaPOCController {
     }
 
     @GetMapping(value = "/getInteractiveQueryCountLastMinute")
-    public Map<String, Long> getInteractiveQueryCountLastMinute() throws Exception {
-        Map<String, Long> tweetCountPerUser = new HashMap<>();
-        KeyValueIterator<String, Long> tweetCounts = kafkaStreamOrderProcessorWindow.getInteractiveQueryCountLastMinute().all();
+    public Map<Object, Object> getInteractiveQueryCountLastMinute() throws Exception {
+        var tweetCountPerUser = new HashMap<>();
+        var tweetCounts = kafkaStreamOrderProcessorWindow.getInteractiveQueryCountLastMinute().all();
         while (tweetCounts.hasNext()) {
-            KeyValue<String, Long> next = tweetCounts.next();
+            var next = tweetCounts.next();
             tweetCountPerUser.put(next.key, next.value);
         }
         tweetCounts.close();
 
         return tweetCountPerUser.entrySet().stream()
-                .sorted(Map.Entry.comparingByValue())
+                //.sorted(Map.Entry.comparingByValue())
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
+                        (a, b) -> a,
+                        LinkedHashMap::new));
+
+    }
+
+    @GetMapping(value = "/getInteractiveQueryCountWindowOutput")
+    public Map<Object, Object> getInteractiveQueryCountWindowOutput() throws Exception {
+        var tweetCountPerUser = new HashMap<>();
+        var tweetCounts = kafkaStreamOrderProcessorWindow.getInteractiveQueryCountWindowOutput().all();
+        while (tweetCounts.hasNext()) {
+            var next = tweetCounts.next();
+            tweetCountPerUser.put(next.key, next.value);
+        }
+        tweetCounts.close();
+
+        return tweetCountPerUser.entrySet().stream()
+                //.sorted(Map.Entry.comparingByValue())
                 .collect(Collectors.toMap(
                         Map.Entry::getKey,
                         Map.Entry::getValue,
